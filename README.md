@@ -1,7 +1,10 @@
-```
-const self = new Proxy({}, {
-	get: (_, prop) => (...args) => obj => obj[prop](...args)
-})
-
-console.log(['hello', 'world'].map(self.slice(1)))
+```java
+// will not modify list
+// unless list has odd number of elements
+// or no elements
+// or contains the String "alphabet"
+// undefined behavior when list = null
+public void myFunction(ArrayList<String> list) {
+	...
+}
 ```
